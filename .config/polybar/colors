@@ -1,0 +1,28 @@
+[colors]
+black = #000
+white = #FFF
+
+success = #00c853
+warning = #ffea00
+danger = #ff1744
+
+trans = #00000000
+;trans = #aa2F343F
+semi-trans = #75000000
+
+bg = #000
+fg = #FFF
+
+prefix = #142D4C
+label = #385170
+
+code = #CAE8D5
+filemanager = #ABD6BB
+firefox = #FFEC4A
+i3 = #29B488
+google-chrome = #4C8BF5
+launcher = #142D4C
+session = #DD5144
+steam = #00ADEE
+terminal = #63FC01
+window = #EAD673

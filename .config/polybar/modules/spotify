@@ -1,0 +1,14 @@
+[module/spotify]
+type = custom/script
+interval = 1
+
+format = <label>
+exec = python $HOME/.config/polybar/scripts/spotify.py -f '{artist}: {song}'
+
+format-background = ${colors.label}
+format-foreground = ${colors.white}
+format-prefix = %{T2}%{T-}
+format-prefix-background = ${colors.prefix}
+format-prefix-foreground = ${colors.white}
+format-prefix-padding = 1
+

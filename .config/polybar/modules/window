@@ -1,0 +1,6 @@
+[module/window]
+type = custom/script
+click-left = rofi -show window
+exec = echo %{T3}%{T-}
+format-foreground = ${colors.window}
+format-padding = 1
