@@ -9,6 +9,7 @@ include-file = /home/$USER/.config/polybar/modules/temperature
 include-file = /home/$USER/.config/polybar/modules/title
 include-file = /home/$USER/.config/polybar/modules/wlan
 include-file = /home/$USER/.config/polybar/modules/custom_backlight
+include-file = /home/$USER/.config/polybar/modules/date
 
 [bar/main]
 width = 100%
