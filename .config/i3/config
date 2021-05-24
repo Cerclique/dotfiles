@@ -15,7 +15,7 @@ bindsym $mod+Shift+x exec --no-startup-id i3lock-fancy-multimonitor -p
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec tilix
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+Q kill
@@ -133,8 +133,8 @@ exec_always --no-startup-id compton --config ~/.config/compton/compton.conf
 exec_always --no-startup-id dunst
 
 # GAP VARIABLES
-set $inner 8
-set $outer 4
+set $inner 4
+set $outer 2
 
 # SET GAPS
 gaps inner $inner
