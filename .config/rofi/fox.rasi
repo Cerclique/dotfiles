@@ -1,7 +1,7 @@
 configuration {
-  show-icons: true;
+  show-icons: false;
   //icon-theme: "Papirus";
-  font: "SauceCodePro Nerd Font Medium 10";
+  font: "Source Code Pro 14";
   drun-display-format: "{icon} {name}";
   display-run: " ";
   display-drun: " ";
@@ -58,10 +58,15 @@ prompt {
   enabled: true;
   text-color: @fg;
   padding: 12 0 0 8;
-  font: "SauceCodePro Nerd Font Medium 11";
+  font: "Source Code Pro 14";
 }
 
 entry {
   text-color: @fg;
   padding: 12;
 }
+
+element-icon {
+  size: 1.5em;
+}
+
