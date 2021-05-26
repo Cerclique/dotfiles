@@ -3,12 +3,12 @@ type = internal/date
 interval = 1
 
 date = " %d-%m-%Y "
-time = " %H:%M "
+time = " %H:%M:%S "
 ; time-alt = " %H:%M %a %d/%m "
 
 format-background = ${colors.label}
 format-foreground = ${colors.white}
-format-prefix = %{T2}%{T-}
+format-prefix = %{T5}%{T-}
 format-prefix-background = ${colors.prefix}
 format-prefix-foreground = ${colors.white}
 format-prefix-padding = 1

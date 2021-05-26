@@ -2,7 +2,7 @@
 type = custom/script
 click-left = rofi -show drun
 click-right = rofi -show run
-exec = echo %{T3}%{T-}
+exec = echo %{T5}%{T-}
 format-background = ${colors.launcher}
 format-foreground = ${colors.white}
 format-padding = 1

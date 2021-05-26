@@ -12,9 +12,9 @@ label-warn = " %temperature-c% "
 label-warn-background = ${colors.label}
 label-warn-foreground = ${colors.white}
 
-ramp-0 = %{T2}%{T-}
-ramp-1 = %{T2}%{T-}
-ramp-2 = %{T2}%{T-}
+ramp-0 = %{T5}%{T-}
+ramp-1 = %{T5}%{T-}
+ramp-2 = %{T5}%{T-}
 ramp-background = ${colors.prefix}
 ramp-foreground = ${colors.white}
 ramp-padding = 1

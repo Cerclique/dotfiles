@@ -10,7 +10,7 @@ scroll-down = ~/.config/polybar/scripts/backlight.sh decrease
 
 format-background = ${colors.label}
 format-foreground = ${colors.white}
-format-prefix = %{T2}%{T-}
+format-prefix = %{T5}%{T-}
 format-prefix-background = ${colors.prefix}
 format-prefix-foreground = ${colors.white}
 format-prefix-padding = 1

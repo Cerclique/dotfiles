@@ -21,18 +21,18 @@ label-discharging-foreground = ${colors.white}
 
 format-full-background = ${colors.label}
 format-full-foreground = ${colors.white}
-format-full-prefix = %{T2}%{T-}
+format-full-prefix = %{T5}%{T-}
 format-full-prefix-background = ${colors.prefix}
 format-full-prefix-foreground = ${colors.white}
 format-full-prefix-padding = 1
 label-full = " %percentage%% "
 
-ramp-capacity-0 = %{T2}%{T-}
-ramp-capacity-1 = %{T2}%{T-}
-ramp-capacity-2 = %{T2}%{T-}
-ramp-capacity-3 = %{T2}%{T-}
-ramp-capacity-4 = %{T2}%{T-}
-;ramp-capacity-5 = %{T2}%{T-}
+ramp-capacity-0 = %{T5}%{T-}
+ramp-capacity-1 = %{T5}%{T-}
+ramp-capacity-2 = %{T5}%{T-}
+ramp-capacity-3 = %{T5}%{T-}
+ramp-capacity-4 = %{T5}%{T-}
+;ramp-capacity-5 = %{T5}%{T-}
 ramp-capacity-background = ${colors.prefix}
 ramp-capacity-foreground = ${colors.white}
 ramp-capacity-padding = 1
