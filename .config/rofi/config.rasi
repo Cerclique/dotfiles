@@ -1,8 +1,9 @@
 configuration {
   show-icons: false;
-  //icon-theme: "Papirus";
-  font: "Source Code Pro 14";
-  drun-display-format: "{icon} {name}";
+  // icon-theme: "Papirus";
+  font: "Source Code Pro 12";
+  // drun-display-format: "{icon} {name}";
+  drun-display-format: "{name}";
   display-run: " ";
   display-drun: " ";
   display-window: " ";
