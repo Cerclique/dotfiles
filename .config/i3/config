@@ -15,7 +15,7 @@ bindsym $mod+Shift+x exec --no-startup-id i3lock-fancy-multimonitor -p
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+Shift+Q kill
@@ -121,7 +121,7 @@ exec --no-startup-id setxkbmap fr
 bindsym $mod+d exec --no-startup-id rofi -show drun
 
 # Set Wallpaper using feh on startup
-exec --no-startup-id feh --bg-scale $HOME/.config/i3/wallapper/space.jpg
+exec --no-startup-id feh --bg-scale $HOME/.config/i3/wallpaper/space.jpg
 
 # Launch Polybar during startup
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
