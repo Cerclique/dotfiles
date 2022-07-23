@@ -2,23 +2,47 @@
 
 # List of mandatory package
 packages=(
+# I3"
 	"i3" 
 	"i3-gaps" 
 	"i3-lock-fancy-multimonitor" 
+# Terminal
 	"kitty"
+# Image viewer
 	"feh"
+# Notification
 	"dunst"
+# Shadow and border
 	"picom"
+# Application launcher
 	"rofi"
+# Status bar
 	"polybar"
+# Shell
 	"zsh"
 	"oh-my-zsh-git"
+# Text editor
 	"emacs"
+# Media player
 	"mpv"
+# Grep alternative
 	"ripgrep"
+# Fuzzy find
 	"fzf"
+# Login screen
 	"lightdm-mini-greeter"
-	"mons")
+# Monitor manager
+	"mons"
+# Process manager
+	"htop"
+# Bluetooth
+	"bluez"
+	"bluez-utils"
+# Spotify
+	"spotifyd"
+	"spt"
+# Password manager
+	"pass")
 
 # Install each package
 for str in ${packages[@]}; do
