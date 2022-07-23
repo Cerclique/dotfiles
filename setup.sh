@@ -42,7 +42,9 @@ packages=(
 	"spotifyd"
 	"spt"
 # Password manager
-	"pass")
+	"pass"
+# Browser
+	"brave-bin)
 
 # Install each package
 for str in ${packages[@]}; do
