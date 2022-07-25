@@ -119,10 +119,10 @@ exec --no-startup-id setxkbmap fr
 bindsym $mod+d exec --no-startup-id rofi -show drun
 
 # Set Wallpaper using feh on startup
-exec --no-startup-id feh --bg-scale $HOME/.config/i3/wallpaper/space.jpg
+exec --no-startup-id feh --bg-scale $HOME/.config/i3/wallpaper/wallpaper.jpg
 
 # Launch Polybar during startup
-exec_always --no-startup-id $HOME/.config/polybar/script/launch.sh
+exec_always --no-startup-id $HOME/.config/polybar/scripts/launch.sh
 
 # Compton: Shadows + corners
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf

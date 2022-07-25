@@ -2,10 +2,21 @@
 
 # List of mandatory package
 packages=(
-# I3"
+# Mesa
+	"mesa"
+	"mesa-tools"
+# Xorg
+	"xorg-server"
+	"xorg-xinit"
+	"xorg-xephyr"
+# Lightdm
+	"lightdm"
+# Man
+	"man"
+# I3
 	"i3" 
 	"i3-gaps" 
-	"i3-lock-fancy-multimonitor" 
+	"i3lock-fancy-multimonitor" 
 # Terminal
 	"kitty"
 # Image viewer
@@ -29,6 +40,8 @@ packages=(
 	"ripgrep"
 # Fuzzy find
 	"fzf"
+# ls replacement
+	"exa"
 # Login screen
 	"lightdm-mini-greeter"
 # Monitor manager
@@ -43,8 +56,12 @@ packages=(
 	"spt"
 # Password manager
 	"pass"
+# Brightness controller
+	"brightnessctl"
+# Inotify
+	"inotify-tools"
 # Browser
-	"brave-bin)
+	"brave-bin")
 
 # Install each package
 for str in ${packages[@]}; do
@@ -55,13 +72,13 @@ done
 cp -f "./.zshrc" /home/$USER/.zshrc
 
 # Copy lightdm
-cp -f -r "./lightdm" /etc/lightdm
+cp -f -r "./lightdm" /etc/
 
 # Copy oh-my-zsh theme
-cp -f -r "./.oh-my-zsh" /usr/share/oh-my-zsh
+cp -f -r "./.oh-my-zsh" /usr/share/
 
 # Copy .config
-cp -f -r "./.config" /home/$USER/.config
+cp -f -r "./.config" /home/$USER/
 
 # Set ZSH as default shell
 chsh -s /bin/zsh
