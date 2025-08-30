@@ -1,8 +1,7 @@
 [init]
   defaultBranch = main
-[pager]
-  branch = false
-  config = false
 [user]
 	email = cerclique@protonmail.com
 	name = Cerclique
+[core]
+	pager = 
