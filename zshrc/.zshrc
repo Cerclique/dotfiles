@@ -20,11 +20,6 @@ source $ZSH/oh-my-zsh.sh
 # aliases
 alias l="eza -bghla --total-size --no-time --icons=always"
 
-# temporary fix for Zed and Nvidia 580 driver
-zed() {
-  WAYLAND_DISPLAY='' zeditor "$@"
-}
-
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
 	yazi "$@" --cwd-file="$tmp"
