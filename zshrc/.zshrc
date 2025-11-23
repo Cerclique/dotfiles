@@ -29,3 +29,4 @@ function y() {
 }
 
 export PATH=$HOME/.cargo/bin:$PATH
+export PATH=$HOME/.volta/bin:$PATH
