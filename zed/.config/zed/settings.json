@@ -7,18 +7,39 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  // Keymap
   "base_keymap": "VSCode",
+  // Format on save
   "format_on_save": "on",
+  // Font related
   "ui_font_family": "JetBrainsMono Nerd Font Mono",
-  "ui_font_size": 15,
+  "ui_font_size": 14,
   "buffer_font_family": "JetBrainsMono Nerd Font Mono",
-  "buffer_font_size": 15,
-  "theme": {
-    "light": "Catppuccin Mocha",
-    "dark": "Catppuccin Mocha"
-  },
+  "buffer_font_size": 14,
+  "buffer_line_height": { "custom": 1.4 },
+  "buffer_font_features": { "calt": false },
+  "buffer_font_weight": 300,
+  // UI
+  "toolbar": { "breadcrumbs": false, "quick_actions": false },
+  "tabs": { "file_icons": true },
+  "current_line_highlight": "none",
+  // Theme
+  "theme": "Catppuccin Mocha",
   "icon_theme": "Catppuccin Mocha",
+  // Misc
   "restore_on_startup": "none",
+  "git": { "inline_blame": { "enabled": false } },
+  "preferred_line_length": 120,
+  "hard_tabs": false,
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "disable_ai": true,
+  // Panels
+  "project_panel": {
+    "entry_spacing": "standard"
+  },
   "collaboration_panel": {
     "button": false
   },
@@ -27,12 +48,5 @@
   },
   "agent": {
     "enabled": false
-  },
-  "preferred_line_length": 120,
-  "hard_tabs": false,
-  "telemetry": {
-    "diagnostics": false,
-    "metrics": false
-  },
-  "disable_ai": true
+  }
 }
