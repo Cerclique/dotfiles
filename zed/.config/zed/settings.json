@@ -27,26 +27,27 @@
   "theme": "Catppuccin Mocha",
   "icon_theme": "Catppuccin Mocha",
   // Misc
-  "restore_on_startup": "none",
+  "restore_on_startup": "empty_tab",
   "git": { "inline_blame": { "enabled": false } },
   "preferred_line_length": 120,
   "hard_tabs": false,
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
-  "disable_ai": true,
   // Panels
   "project_panel": {
-    "entry_spacing": "standard"
+    "entry_spacing": "standard",
   },
   "collaboration_panel": {
-    "button": false
+    "button": false,
   },
-  "chat_panel": {
-    "button": "never"
+  // AI
+  "agent_servers": {
+    "OpenCode": {
+      "type": "custom",
+      "command": "opencode",
+      "args": ["acp"],
+    },
   },
-  "agent": {
-    "enabled": false
-  }
 }
