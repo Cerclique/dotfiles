@@ -19,6 +19,7 @@ source $ZSH/oh-my-zsh.sh
 
 # aliases
 alias l="eza -bghla --total-size --no-time --icons=always"
+alias sqlb="sqlitebrowser" 
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
