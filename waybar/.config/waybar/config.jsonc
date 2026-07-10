@@ -7,7 +7,6 @@
     "format": "{icon}",
     "on-click": "activate",
     "format-icons": {
-      "8": " ", 
       "9": " ",
       "10": " ",
       "urgent": " ",
