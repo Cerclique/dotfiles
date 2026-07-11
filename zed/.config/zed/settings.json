@@ -27,12 +27,12 @@
   "theme": {
     "mode": "dark",
     "light": "Catppuccin Latte",
-    "dark": "Catppuccin Mocha"
+    "dark": "Catppuccin Mocha",
   },
   "icon_theme": {
     "mode": "dark",
     "light": "Catppuccin Mocha",
-    "dark": "Catppuccin Mocha"
+    "dark": "Catppuccin Mocha",
   },
   // Misc
   "restore_on_startup": "empty_tab",
@@ -49,13 +49,5 @@
   },
   "collaboration_panel": {
     "button": false,
-  },
-  // AI
-  "agent_servers": {
-    "OpenCode": {
-      "type": "custom",
-      "command": "opencode",
-      "args": ["acp"],
-    },
   },
 }
