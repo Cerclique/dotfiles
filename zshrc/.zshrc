@@ -1,25 +1,14 @@
-# Lines configured by zsh-newuser-install
-HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
-bindkey -e
-# End of lines configured by zsh-newuser-install
-# The following lines were added by compinstall
-zstyle :compinstall filename '/home/kiwi/.zshrc'
-
-autoload -Uz compinit
-compinit
-# End of lines added by compinstall
-
 # oh-my-zsh configuration
 export ZSH="$HOME/.oh-my-zsh"
+export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
+
 ZSH_THEME="dissoni"
 plugins=(git)
+
 source $ZSH/oh-my-zsh.sh
 
 # aliases
 alias l="eza -bghla --total-size --no-time --icons=always"
-alias sqlb="sqlitebrowser" 
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
@@ -30,4 +19,3 @@ function y() {
 }
 
 export PATH=$HOME/.cargo/bin:$PATH
-export PATH=$HOME/.volta/bin:$PATH
