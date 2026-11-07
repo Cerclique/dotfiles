@@ -40,9 +40,10 @@ hl.config({
 -- Workspaces 1-5 on the AOC, 6-10 on the Lenovo
 for i = 1, 10 do
   hl.workspace_rule({
-    workspace = tostring(i),
-    monitor   = i <= 5 and aoc or lenovo,
-    default   = (i == 1 or i == 6) or nil,
+    workspace  = tostring(i),
+    monitor    = i <= 5 and aoc or lenovo,
+    default    = (i == 1 or i == 6) or nil,
+    persistent = true,
   })
 end
 

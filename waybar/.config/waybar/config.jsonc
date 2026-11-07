@@ -10,9 +10,6 @@
       "urgent": " ",
       "active": " ",
     },
-    "persistent-workspaces": {
-      "*": 10,
-    },
     "sort-by-number": true,
   },
   "clock": {
