@@ -8,6 +8,13 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   // Keymap
+  "agent": {
+    "threads_sidebar": {
+      "position": "right"
+    },
+    "favorite_models": [],
+    "model_parameters": []
+  },
   "base_keymap": "VSCode",
   // Format on save
   "format_on_save": "on",
@@ -45,6 +52,7 @@
   },
   // Panels
   "project_panel": {
+    "dock": "left",
     "entry_spacing": "standard",
   },
   "collaboration_panel": {
