@@ -2,7 +2,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 
-export HISTFILE=$ZSH/cache/.zsh_history
 export HISTSIZE=100000
 export SAVEHIST=$HISTSIZE
 
