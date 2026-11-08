@@ -3,9 +3,7 @@ environment.d
 git
 gitui
 htop
-hyprland
-hyprlock
-hyprpaper
+hypr
 kitty
 theme
 waybar

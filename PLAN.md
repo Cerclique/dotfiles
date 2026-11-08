@@ -50,8 +50,8 @@ Taken from the architecture review of 2026-11-08. Do the phases in order. Each p
 - [x] Check: `stow -n -v <pkgs>` dry-run; optionally run the script in an `archlinux` container.
 
 ## Phase 4: Merge the hypr packages
-- [ ] Merge `hyprland/`, `hyprlock/`, `hyprpaper/` into a single `hypr/` package (with `hypridle.conf`). Then stow links the whole `~/.config/hypr` folder, and new files there end up in the repo.
-- [ ] Unstow the old packages, delete the real `~/.config/hypr` directory, then `stow hypr`.
+- [x] Merge `hyprland/`, `hyprlock/`, `hyprpaper/` into a single `hypr/` package (with `hypridle.conf`). Then stow links the whole `~/.config/hypr` folder, and new files there end up in the repo.
+- [x] Unstow the old packages, delete the real `~/.config/hypr` directory, then `stow hypr`.
 
 ## Phase 5: Add the remaining configs from `$HOME`
 Secrets stay out: `gh/hosts.yml`, `opencode/cli.json`, `opencode/service.json`, SSH keys, `~/.claude.json`.
