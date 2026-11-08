@@ -1,0 +1,18 @@
+# Secrets that must never be committed
+hosts.yml
+cli.json
+service.json
+id_*
+*.pem
+*.key
+.env
+
+# Backups and editor junk
+*.bak
+*.bak-*
+*.swp
+*~
+
+# Tooling
+node_modules/
+.claude/

@@ -56,14 +56,14 @@ Taken from the architecture review of 2026-11-08. Do the phases in order. Each p
 ## Phase 5: Add the remaining configs from `$HOME`
 Secrets stay out: `gh/hosts.yml`, `opencode/cli.json`, `opencode/service.json`, SSH keys, `~/.claude.json`.
 
-- [ ] `ssh/.ssh/config` (file only; `~/.ssh` stays mode 700).
-- [ ] `gh/.config/gh/config.yml` (+ `.gitignore` `hosts.yml`).
-- [ ] `gtk/`: `gtk-3.0/settings.ini`, `gtk-4.0/settings.ini`, `.gtkrc-2.0`, `xsettingsd/xsettingsd.conf`, `nwg-look/config`.
-- [ ] `opencode/`: `opencode.jsonc`, `skills/` (ignore `node_modules`, `package*.json`, credential JSONs).
-- [ ] `claude/`: `CLAUDE.md`, `settings.json`, `skills/`, stowed one file at a time (not the whole `~/.claude`).
-- [ ] `xdg/.config/mimeapps.list`.
-- [ ] Add a `.gitignore` at the repo root.
-- [ ] Skip: mpv (empty), neofetch, pavucontrol.ini, QtProject.conf, dconf, spotify, pulse.
+- [x] ~~`ssh/.ssh/config` (file only; `~/.ssh` stays mode 700).~~ declined by user (2026-11-08)
+- [x] ~~`gh/.config/gh/config.yml` (+ `.gitignore` `hosts.yml`).~~ declined by user (2026-11-08)
+- [x] ~~`gtk/`: `gtk-3.0/settings.ini`, `gtk-4.0/settings.ini`, `.gtkrc-2.0`, `xsettingsd/xsettingsd.conf`, `nwg-look/config`.~~ declined by user (2026-11-08)
+- [x] ~~`opencode/`: `opencode.jsonc`, `skills/` (ignore `node_modules`, `package*.json`, credential JSONs).~~ declined by user (2026-11-08)
+- [x] ~~`claude/`: `CLAUDE.md`, `settings.json`, `skills/`, stowed one file at a time (not the whole `~/.claude`).~~ declined by user (2026-11-08)
+- [x] ~~`xdg/.config/mimeapps.list`.~~ declined by user (2026-11-08)
+- [x] Add a `.gitignore` at the repo root.
+- [x] Skip: mpv (empty), neofetch, pavucontrol.ini, QtProject.conf, dconf, spotify, pulse.
 
 ## Housekeeping
 - [x] Commit the pending `git/.gitconfig` credential-helper change.
