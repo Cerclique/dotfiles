@@ -2,7 +2,7 @@
 
 Single place where the Catppuccin Mocha palette and the font are defined.
 
-- `mocha.css`  GTK-CSS `@define-color`, imported by waybar and wofi.
+- `mocha.css`  GTK-CSS `@define-color`, imported by waybar (wofi inlines the colors it uses: it loads CSS as data, so relative imports break).
 - `mocha.lua`  table of colours (hex without `#`) plus `font`, required by the Hyprland Lua config.
 - `mocha.conf` hyprlang variables, sourced by hyprlock.
 
