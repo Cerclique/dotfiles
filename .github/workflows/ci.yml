@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install stow
+        run: sudo apt-get update && sudo apt-get install -y stow
+
+      - name: shellcheck install.sh
+        run: shellcheck install.sh
+
+      - name: Stow dry run (per package, temporary HOME)
+        run: |
+          set -euo pipefail
+          tmp="$(mktemp -d)"
+          grep -v -e '^\s*#' -e '^\s*$' stow-packages | while read -r pkg; do
+            echo "::group::stow $pkg"
+            stow -n -v -t "$tmp" "$pkg"
+            echo "::endgroup::"
+          done
