@@ -30,10 +30,11 @@ Taken from the architecture review of 2026-11-08. Do the phases in order. Each p
 ## Phase 2: Shell environment
 - [x] Add `environment.d/.config/environment.d/10-session.conf` with `SSH_AUTH_SOCK=${XDG_RUNTIME_DIR}/ssh-agent.socket` and PATH additions (`~/.cargo/bin`).
 - [x] Track `~/.zshenv` in the `zshrc` package (keep only zsh-specific settings there).
-- [ ] Remove the hardcoded `SSH_AUTH_SOCK` from `~/.claude/settings.json` once the environment.d file works.
+- [x] Remove the hardcoded `SSH_AUTH_SOCK` from `~/.claude/settings.json` once the environment.d file works.
 - [x] Set `ZSH_CUSTOM=$HOME/.config/zsh/custom`. Move `dissoni.zsh-theme` there and delete the `oh-my-zsh` package (it currently writes into the oh-my-zsh git clone).
 - [x] Move `HISTFILE` to `$XDG_STATE_HOME/zsh/history` (copy the existing history first!).
-- [ ] Check: `systemctl --user show-environment | grep SSH_AUTH_SOCK`, then open a new terminal and run `echo $HISTFILE`.
+- [x] Check: `systemctl --user show-environment | grep SSH_AUTH_SOCK`, then open a new terminal and run `echo $HISTFILE`.
+  - Note (2026-11-08): `SSH_AUTH_SOCK` from environment.d works, but the `~/.cargo/bin` PATH entry is not picked up by the systemd user manager, so `.zshrc` still adds it.
 
 ## Phase 3: Bootstrap
 - [x] Move `sddm/` to `system/sddm/` so `stow */` never links it into `$HOME`.
