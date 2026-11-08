@@ -36,18 +36,18 @@ Taken from the architecture review of 2026-11-08. Do the phases in order. Each p
 - [ ] Check: `systemctl --user show-environment | grep SSH_AUTH_SOCK`, then open a new terminal and run `echo $HISTFILE`.
 
 ## Phase 3: Bootstrap
-- [ ] Move `sddm/` to `system/sddm/` so `stow */` never links it into `$HOME`.
-- [ ] `.stowrc` / package list of the home packages to stow.
-- [ ] `packages.txt`: hyprland, hyprlock, hypridle, hyprpaper, hyprshot, waybar, wofi, kitty, thunar, eza, yazi, gitui, htop, zed, gh, stow, ttf-jetbrains-mono-nerd, catppuccin GTK theme, sddm-astronaut-theme, nwg-look…
-- [ ] `install.sh` (idempotent):
+- [x] Move `sddm/` to `system/sddm/` so `stow */` never links it into `$HOME`.
+- [x] `.stowrc` / package list of the home packages to stow.
+- [x] `packages.txt`: hyprland, hyprlock, hypridle, hyprpaper, hyprshot, waybar, wofi, kitty, thunar, eza, yazi, gitui, htop, zed, gh, stow, ttf-jetbrains-mono-nerd, catppuccin GTK theme, sddm-astronaut-theme, nwg-look…
+- [x] `install.sh` (idempotent):
   1. install `packages.txt` (pacman/yay)
   2. clone oh-my-zsh if it's missing
   3. `stow` the home packages
   4. link `system/sddm/sddm.conf` → `/etc/sddm.conf` (sudo)
   5. `systemctl --user enable ssh-agent.socket orbit.service`
   6. recreate the gtk-4.0 links to `/usr/share/themes/catppuccin-mocha-red-standard+default`
-- [ ] `README.md`: what the repo is, and how to run `install.sh`.
-- [ ] Check: `stow -n -v <pkgs>` dry-run; optionally run the script in an `archlinux` container.
+- [x] `README.md`: what the repo is, and how to run `install.sh`.
+- [x] Check: `stow -n -v <pkgs>` dry-run; optionally run the script in an `archlinux` container.
 
 ## Phase 4: Merge the hypr packages
 - [ ] Merge `hyprland/`, `hyprlock/`, `hyprpaper/` into a single `hypr/` package (with `hypridle.conf`). Then stow links the whole `~/.config/hypr` folder, and new files there end up in the repo.

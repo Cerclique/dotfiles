@@ -1,0 +1,15 @@
+# Home packages stowed by install.sh (system/ is not stowed into $HOME).
+environment.d
+git
+gitui
+htop
+hyprland
+hyprlock
+hyprpaper
+kitty
+theme
+waybar
+wofi
+yazi
+zed
+zshrc

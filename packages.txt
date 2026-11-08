@@ -1,0 +1,26 @@
+# One package per line. Official repos are installed with pacman, AUR ones (marked below) with yay.
+stow
+zsh
+git
+github-cli
+hyprland
+hyprlock
+hypridle
+hyprpaper
+hyprshot
+waybar
+wofi
+swaync
+kitty
+thunar
+eza
+yazi
+gitui
+htop
+zed
+nwg-look
+sddm
+ttf-jetbrains-mono-nerd
+# AUR
+aur:catppuccin-gtk-theme-mocha
+aur:sddm-astronaut-theme
