@@ -1,0 +1,9 @@
+# Repositories the waybar-github-viewer `repo` panel shows, in this order.
+# One per line: owner/name, https://github.com/owner/name or
+# git@github.com:owner/name.git. Blank lines are ignored; `#` starts a comment.
+# Panel arguments (`toggle repo owner/name…`) replace this list.
+
+cerclique/caesium
+cerclique/wirdigen
+cerclique/waybar-gpui
+cerclique/waybar-gpui-panels
