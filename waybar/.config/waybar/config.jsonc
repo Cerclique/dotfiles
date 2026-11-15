@@ -2,7 +2,7 @@
   "position": "top",
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
-  "modules-right": ["network", "pulseaudio", "battery", "clock"],
+  "modules-right": ["custom/github", "network", "pulseaudio", "battery", "clock"],
   "hyprland/workspaces": {
     "format": "{icon}",
     "on-click": "activate",
@@ -47,5 +47,10 @@
       "default": ["", "", " "],
     },
     "on-click": "pavucontrol",
+  },
+  "custom/github": {
+    "format": "<span foreground='white'> \uea84 </span>",
+    "tooltip": false,
+    "on-click": "~/.cargo/bin/waybar-gpui-panels toggle github",
   },
 }
