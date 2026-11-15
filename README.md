@@ -28,7 +28,7 @@ Each top-level directory is a stow package that mirrors `$HOME`; `system/` holds
 > Read it before running it.
 
 ```sh
-git clone https://github.com/Cerclique/dotfiles ~/dotfiles && cd ~/dotfiles
+git clone https://github.com/Cerclique/dotfiles ~/repos/dotfiles && cd ~/repos/dotfiles
 ./install.sh
 ```
 
